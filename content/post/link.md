@@ -1,7 +1,6 @@
 ---
 title: "Links"
 date: "2021-01-16"
-menu: "main"
 showComments: false
 ---
 

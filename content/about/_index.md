@@ -1,7 +1,6 @@
 ---
 title: "About me"
 date: "2016-11-05"
-menu: "main"
 showComments: false
 ---
 

@@ -1,0 +1,73 @@
+baseURL = "https://blog.saintic.com" # <head> 里面的 baseurl 信息，填你的博客地址
+title = "陶先森de博客" # 浏览器的标题
+languageCode = "zh-cn" # 语言
+hasCJKLanguage = true # 开启可以让「字数统计」统计汉字
+theme = "mogege" # 主题 
+
+paginate = 11 # 每页的文章数
+enableEmoji = true # 支持 Emoji
+enableRobotsTXT = true # 支持 robots.txt
+
+uglyURLs = true
+publishDir = "dist"
+
+preserveTaxonomyNames = true
+
+[blackfriday]
+    hrefTargetBlank = true
+    nofollowLinks = true
+    noreferrerLinks = true
+
+[Permalinks]
+    posts = "/:filename"
+
+[menu]
+
+    [[menu.main]]
+        name = "Posts"
+        url = "/blog.html"
+        weight = 2
+
+    [[menu.main]]
+        name = "Categories"
+        url = "/categories.html"
+        weight = 3
+
+    [[menu.main]]
+        name = "Tags"
+        url = "/tags.html"
+        weight = 4
+
+    [[menu.main]]
+        name = "Links"
+        url = "/link.html"
+        weight = 5
+
+[params]
+    since = 2017
+    author = "Hiroshi.tao"                          # Author's name
+    avatar = "https://static.saintic.com/cdn/images/avatar.png!/fw/200" # Author's avatar
+    subtitle = "记录技术点滴，开源项目与文档，分享经验与技术"                  # Subtitle
+    home_mode = "" # post or other
+    enableGitalk = false # gitalk 评论系统
+    enableUtteranc = true # utteranc 评论系统
+
+    google_verification = ""
+
+    description = "Hiroshi.tao の 网络日志" # (Meta) 描述
+    keywords = "SaintIC,staugur,Linux,DevOps,python" # site keywords
+
+    beian = "京ICP备14058611号"
+    baiduAnalytics = ""
+    googleAnalytics = "" # Google 统计 id
+
+    license= '本文采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a> 进行许可'
+
+[params.utteranc]
+    repo = "staugur/staugur.github.io" # The repo to store comments
+    issueTerm = "pathname" # the mapping between blog posts and GitHub issues. 
+    theme = "github-light" # Theme
+    crossorigin = "anonymous" # default: anonymous
+
+[markup.goldmark.renderer]
+    unsafe = true
